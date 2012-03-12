@@ -1,4 +1,6 @@
 MiddleShelf::Application.routes.draw do
+  devise_for :users
+
   resources :invoices
 
   resources :items
