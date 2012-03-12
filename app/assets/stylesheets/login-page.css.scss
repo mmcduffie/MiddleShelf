@@ -1,0 +1,12 @@
+@import "global.css.scss";
+
+#middleshelf_login_box {
+  width: 250px;
+	padding: 10px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+  background-color: #E5F6F4;
+	@include rounded(0.5em);
+	@include box-shadow(0.4em,0.4em,0.4em,#000000);
+}
