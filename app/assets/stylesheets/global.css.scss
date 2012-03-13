@@ -1,20 +1,3 @@
-/* Global CSS Styles */
-
-html body {
-  padding: 0px;
-	margin: 0px;
-  background-color: #EEEEEE;
-}
-
-header {
-  height: 100px;
-  background-color: #000000;
-}
-
-#middleshelf_main_content {
-  padding: 10px;
-}
-
 /* Mixins */
 
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
@@ -33,4 +16,32 @@ header {
   -webkit-border-radius: .5em;
   -moz-border-radius: .5em;
   border-radius: .5em;
+}
+
+@mixin gradient($from, $to) {
+  background-color: $from;
+	background: url(images/linear_bg_2.png);
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+	background: -webkit-linear-gradient(top, $to, $from);
+	background: -moz-linear-gradient(top, $to, $from);
+	background: -ms-linear-gradient(top, $to, $from);
+	background: -o-linear-gradient(top, $to, $from);
+}
+
+/* Global CSS Styles */
+
+html body {
+  padding: 0px;
+	margin: 0px;
+  @include gradient(#1a82f7, #2F2727);
+}
+
+header {
+  height: 100px;
+  background-color: #000000;
+}
+
+#middleshelf_main_content {
+  padding: 10px;
 }
