@@ -5,10 +5,13 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+	<style type="text/css"><%= yield :stylesheets %></style>
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+  </header>
+	<div id="middleshelf_main_content">
+    <%= yield %>
+  </div>
 </body>
 </html>

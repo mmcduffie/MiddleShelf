@@ -1,7 +1,18 @@
 /* Global CSS Styles */
 
 html body {
-  background-color: #D8E0DF;
+  padding: 0px;
+	margin: 0px;
+  background-color: #EEEEEE;
+}
+
+header {
+  height: 100px;
+  background-color: #000000;
+}
+
+#middleshelf_main_content {
+  padding: 10px;
 }
 
 /* Mixins */

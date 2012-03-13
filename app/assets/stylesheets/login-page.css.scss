@@ -6,7 +6,7 @@
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-  background-color: #E5F6F4;
+  background-color: #FFFFFF;
 	@include rounded(0.5em);
-	@include box-shadow(0.4em,0.4em,0.4em,#000000);
+	@include box-shadow(0.1em,0.1em,0.1em,#000000);
 }
