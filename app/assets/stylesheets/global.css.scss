@@ -19,7 +19,7 @@
 }
 
 @mixin gradient($from, $to) {
-  background-color: $from;
+    background-color: $from;
 	background: url(images/linear_bg_2.png);
 	background-repeat: repeat-x;
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
@@ -31,10 +31,14 @@
 
 /* Global CSS Styles */
 
-html body {
+html {
+  background-color: #CCCCCC;
+}
+
+body {
   padding: 0px;
-	margin: 0px;
-  @include gradient(#1a82f7, #2F2727);
+  margin: 0px;
+  @include gradient(#CCCCCC, #000000);
 }
 
 header {
