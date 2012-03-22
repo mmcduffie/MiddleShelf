@@ -1,4 +1,8 @@
 MiddleShelf::Application.routes.draw do
+  resources :customers
+
+  resources :invoice_items
+
   devise_for :users
 
   resources :invoices
