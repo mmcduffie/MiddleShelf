@@ -40,7 +40,15 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(params[:item])
+    cost = params[:item][:cost]
+    selling_price = params[:item][:selling_price]
+    if cost == ""
+      cost = "0"
+    end
+    if selling_price == ""
+      selling_price = "0"
+    end
+    @item = Item.new(:cost => Money.new(Integer(cost)),:selling_price => Money.new(Integer(selling_price)))
 
     respond_to do |format|
       if @item.save
@@ -57,9 +65,17 @@ class ItemsController < ApplicationController
   # PUT /items/1.json
   def update
     @item = Item.find(params[:id])
+    cost = params[:item][:cost]
+    selling_price = params[:item][:selling_price]
+    if cost == ""
+      cost = "0"
+    end
+    if selling_price == ""
+      selling_price = "0"
+    end
 
     respond_to do |format|
-      if @item.update_attributes(params[:item])
+      if @item.update_attributes(:cost => Money.new(Integer(cost)),:selling_price => Money.new(Integer(selling_price)))
         format.html { redirect_to @item, notice: 'Item was successfully updated.' }
         format.json { head :no_content }
       else

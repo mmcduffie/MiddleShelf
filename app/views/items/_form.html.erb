@@ -10,7 +10,14 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :selling_price %><br />
+    <%= f.text_field :selling_price %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

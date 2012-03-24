@@ -40,3 +40,4 @@ gem 'jquery-rails'
 # Stuff Marcus has added.
 
 gem 'devise'
+gem 'money'
