@@ -35,21 +35,15 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    @item[:cost] = @item.cost.to_s
+	@item[:selling_price] = @item.selling_price.to_s
   end
 
   # POST /items
   # POST /items.json
   def create
-    cost = params[:item][:cost]
-    selling_price = params[:item][:selling_price]
-    if cost == ""
-      cost = "0"
-    end
-    if selling_price == ""
-      selling_price = "0"
-    end
-    @item = Item.new(:cost => Money.new(Integer(cost)),:selling_price => Money.new(Integer(selling_price)))
-
+    @item = Item.new(params[:item])
+    
     respond_to do |format|
       if @item.save
         format.html { redirect_to @item, notice: 'Item was successfully created.' }
@@ -65,17 +59,9 @@ class ItemsController < ApplicationController
   # PUT /items/1.json
   def update
     @item = Item.find(params[:id])
-    cost = params[:item][:cost]
-    selling_price = params[:item][:selling_price]
-    if cost == ""
-      cost = "0"
-    end
-    if selling_price == ""
-      selling_price = "0"
-    end
 
     respond_to do |format|
-      if @item.update_attributes(:cost => Money.new(Integer(cost)),:selling_price => Money.new(Integer(selling_price)))
+      if @item.update_attributes(params[:item])
         format.html { redirect_to @item, notice: 'Item was successfully updated.' }
         format.json { head :no_content }
       else
