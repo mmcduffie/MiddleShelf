@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Invoice Id</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +10,7 @@
 
 <% @invoices.each do |invoice| %>
   <tr>
+    <td><%= invoice.id %></td>
     <td><%= link_to 'Show', invoice %></td>
     <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
     <td><%= link_to 'Destroy', invoice, confirm: 'Are you sure?', method: :delete %></td>
