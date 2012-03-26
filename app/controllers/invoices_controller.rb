@@ -35,7 +35,7 @@ class InvoicesController < ApplicationController
   # GET /invoices/1/edit
   def edit
     @invoice = Invoice.find(params[:id])
-	@invoice_items = InvoiceItem.find(:all) #:conditions => { :invoice_id => @invoice.id } )
+    @invoice_items = InvoiceItem.find(:all) #:conditions => { :invoice_id => @invoice.id } )
     @invoice_item = InvoiceItem.new
   end
 
