@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>InvoiceItem ID</th>
     <th>Invoice ID</th>
     <th>Item ID</th>
     <th>Name</th>
@@ -13,6 +14,7 @@
 
 <% @invoice_items.each do |invoice_item| %>
   <tr>
+    <td><%= invoice_item.id %></td>
     <td><%= invoice_item.invoice_id %></td>
     <td><%= invoice_item.item_id %></td>
     <td><%= invoice_item.name %></td>

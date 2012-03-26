@@ -19,26 +19,25 @@
 }
 
 @mixin gradient($from, $to) {
-    background-color: $from;
-	background: url(images/linear_bg_2.png);
-	background-repeat: repeat-x;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
-	background: -webkit-linear-gradient(top, $to, $from);
-	background: -moz-linear-gradient(top, $to, $from);
-	background: -ms-linear-gradient(top, $to, $from);
-	background: -o-linear-gradient(top, $to, $from);
+  background-color: $from;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background: -webkit-linear-gradient(top, $to, $from);
+  background: -moz-linear-gradient(top, $to, $from);
+  background: -ms-linear-gradient(top, $to, $from);
+  background: -o-linear-gradient(top, $to, $from);
 }
 
 /* Global CSS Styles */
 
 html {
-  background-color: #CCCCCC;
+  background-color: #FFFFFF;
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  @include gradient(#CCCCCC, #000000);
 }
 
 header {

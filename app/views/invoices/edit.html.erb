@@ -1,5 +1,36 @@
 <h1>Editing invoice</h1>
 
+<table id="invoice_items_table">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+<% @invoice_items.each do |invoice_item| %>
+  <tr>
+    <td><%= invoice_item.name %></td>
+    <td><%= invoice_item.description %></td>
+  </tr>
+<% end %>
+</table>
+<%= form_for(@invoice_item, :remote => true) do |f| %>
+  <div class="field">
+    <%= f.hidden_field :invoice_id, {:value => @invoice.id}%>
+  </div>
+  <div class="field">
+    <%= f.label :item_id %><br />
+    <%= f.number_field :item_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.number_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.number_field :description %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
 <%= render 'form' %>
 
 <%= link_to 'Show', @invoice %> |

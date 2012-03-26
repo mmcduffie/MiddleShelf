@@ -44,6 +44,7 @@ class InvoiceItemsController < ApplicationController
 
     respond_to do |format|
       if @invoice_item.save
+        format.js
         format.html { redirect_to @invoice_item, notice: 'Invoice item was successfully created.' }
         format.json { render json: @invoice_item, status: :created, location: @invoice_item }
       else
