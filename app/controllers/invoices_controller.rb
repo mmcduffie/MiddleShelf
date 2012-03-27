@@ -37,6 +37,7 @@ class InvoicesController < ApplicationController
     @invoice = Invoice.find(params[:id])
     @invoice_items = InvoiceItem.find(:all) #:conditions => { :invoice_id => @invoice.id } )
     @invoice_item = InvoiceItem.new
+    @customer = @invoice.customer ||= Customer.new
   end
 
   # POST /invoices
@@ -59,6 +60,8 @@ class InvoicesController < ApplicationController
   # PUT /invoices/1.json
   def update
     @invoice = Invoice.find(params[:id])
+    #@customer = Customer.find(params[:customer])
+    #@customer.save
 
     respond_to do |format|
       if @invoice.update_attributes(params[:invoice])

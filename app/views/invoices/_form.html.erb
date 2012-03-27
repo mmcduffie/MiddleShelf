@@ -10,7 +10,17 @@
       </ul>
     </div>
   <% end %>
-  
+  <div class="field">
+    <%= f.label :customer_id %><br />
+    <%= f.text_field :customer_id %>
+  </div>
+  <%= fields_for @customer do |customer_fields| %>
+    <%= customer_fields.hidden_field :id %>
+    <div class="field">
+      <%= customer_fields.label :first_name %><br />
+      <%= customer_fields.text_field :first_name %>
+    </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>
