@@ -11,7 +11,7 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :customer_id %><br />
+    <label for="invoice_customer_id">Customer ID</label><br />
     <%= f.text_field :customer_id %>
   </div>
   <%= fields_for @customer do |customer_fields| %>
@@ -19,6 +19,10 @@
     <div class="field">
       <%= customer_fields.label :first_name %><br />
       <%= customer_fields.text_field :first_name %>
+    </div>
+    <div class="field">
+      <%= customer_fields.label :last_name %><br />
+      <%= customer_fields.text_field :last_name %>
     </div>
   <% end %>
   <div class="actions">

@@ -4,6 +4,8 @@
   <tr>
     <th>Invoice Id</th>
     <th>Customer Id</th>
+    <th>Customer First Name</th>
+    <th>Customer Last Name</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +15,8 @@
   <tr>
     <td><%= invoice.id %></td>
     <td><%= invoice.customer_id %></td>
+    <td><%= invoice.customer.first_name %></td>
+    <td><%= invoice.customer.last_name %></td>
     <td><%= link_to 'Show', invoice %></td>
     <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
     <td><%= link_to 'Destroy', invoice, confirm: 'Are you sure?', method: :delete %></td>

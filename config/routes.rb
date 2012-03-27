@@ -14,7 +14,7 @@ MiddleShelf::Application.routes.draw do
 
   resources :items
   
-  resources :todays_invoices
+  match 'todays_invoices' => 'todays_invoices#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
