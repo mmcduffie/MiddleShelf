@@ -1,5 +1,10 @@
 MiddleShelf::Application.routes.draw do
-  resources :customers
+
+  resources :customers do
+    collection do
+      post 'search'
+    end
+  end
 
   resources :invoice_items
 

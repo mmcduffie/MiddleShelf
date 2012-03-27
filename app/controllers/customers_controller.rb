@@ -80,4 +80,10 @@ class CustomersController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def search
+    @customers = Customer.where("last_name >= ?", params[:last_name])
+    respond_to do |format|
+      format.js
+    end
+  end
 end
