@@ -39,7 +39,7 @@ gem 'jquery-rails'
 
 # Stuff Marcus has added.
 
-gem 'execjs'
-gem 'therubyracer'
+gem 'execjs', :platforms => :ruby
+gem 'therubyracer', :platforms => :ruby
 gem 'devise'
 gem 'money'
