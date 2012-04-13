@@ -5,5 +5,4 @@ class Invoice extends Backbone.Model
 
 invoice = new Invoice
 invoice.set customerId: '1'
-test = invoice.get 'customerId'
-alert test
+alert invoice.get customerId
