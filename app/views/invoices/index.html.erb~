@@ -26,6 +26,6 @@
 
 <%= link_to 'New Invoice', new_invoice_path %>
 
-<script type="text/javascript">
+<script>
 var invoiceData = <%= @invoices.to_json.html_safe %>
 </script>
