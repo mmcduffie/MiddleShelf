@@ -9,6 +9,6 @@
 </table>
 <a id="add_part_button" href="#">Add Part</a>
 <script type="text/javascript">
-  var invoiceID    = <%= @invoice.id %>
-  var invoiceItems = <%= @invoice.invoice_items.to_json.html_safe %>
+  var invoiceID          = <%= @invoice.id %>;
+  var serverInvoiceItems = <%= @invoice.invoice_items.to_json.html_safe %>;
 </script>
