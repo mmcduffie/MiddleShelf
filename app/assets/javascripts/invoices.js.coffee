@@ -1,29 +1,12 @@
 $ ->
-  class Invoice extends Backbone.Model
+  #Classes
+  class InvoiceItem extends Backbone.Model
+    url:      '/invoice_items'
 
-  class Invoices extends Backbone.Collection
-    model:    Invoice
-    url:      '/invoices'
-
-  class InvoiceView extends Backbone.View
-    initialize: ->
-      @model.bind('change', this.render)
-      @model.view = this
-
-    render: =>
-      $("html").html(Invoice.toJSON())
-      this.setContent()
-      return this
-
-  invoices = new Invoices
-  invoices.reset(invoiceData)
-
-  invoice = new Invoice
-
-  invoiceView = new InvoiceView({ model: invoice })
-
-  invoiceView.render()
-
-  ids = invoices.pluck("customer_id");
-
-  alert ids
+  class InvoiceItems extends Backbone.Collection
+    model:    InvoiceItem
+    url:      '/invoice_items'
+  #Bind Callbacks To Buttons
+  $('#add_part_button').click ->
+    invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':3})
+    invoiceItem.save()
