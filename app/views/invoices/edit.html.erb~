@@ -1,5 +1,5 @@
 <% content_for :page_script do %>
-  <%= javascript_include_tag "invoices" %>
+  javascript_include_tag "invoices"
 <% end %>
 <h1>Editing invoice</h1>
 <table id="invoice_items" border=1>

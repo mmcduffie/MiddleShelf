@@ -9,6 +9,9 @@ $ ->
 
   class InvoiceItemView extends Backbone.View
     el:       $('#invoice_items')
+    tagName:  'td'
+    initialize: ->
+      
     render:   ->
       $(@el).html(Mustache.render('<tr><td>{{ item_id }}</td></tr>',@model.toJSON()))
       # This may be backwards when I start calling render from the change even on the models...
@@ -28,4 +31,4 @@ $ ->
 
   invoiceItemView.model = testModel        # really, we should be binding the render method in the view to the change event in the model.
 
-  invoiceItemView.render()                 # Render replaces everything in the table with new data.
+  invoiceItemView.render()                 # Render replaces everything in the table with new data. -EDIT not true anymore.

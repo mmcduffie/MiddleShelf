@@ -9,6 +9,9 @@ $ ->
 
   class InvoiceItemView extends Backbone.View
     el:       $('#invoice_items')
+    tagName:  'td'
+    initialize: ->
+      _.bindAll this, 'render'
     render:   ->
       $(@el).html(Mustache.render('<tr><td>{{ item_id }}</td></tr>',@model.toJSON()))
       # This may be backwards when I start calling render from the change even on the models...
