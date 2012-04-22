@@ -1,27 +1,31 @@
 $ ->
-  class Invoice extends Backbone.Model
+  #Classes
+  class InvoiceItem extends Backbone.Model
+    url:      '/invoice_items'
 
-  class Invoices extends Backbone.Collection
-    model:    Invoice
-    url:      '/invoices'
+  class InvoiceItems extends Backbone.Collection
+    model:    InvoiceItem
+    url:      '/invoice_items'
 
-  class InvoiceView extends Backbone.View
-    initialize: ->
-      @model.bind('change', this.render)
-      @model.view = this
+  class InvoiceItemView extends Backbone.View
+    el:       $('#invoice_items')
+    render:   ->
+      $(@el).html(Mustache.render('<tr><td>{{ item_id }}</td></tr>',@model.toJSON()))
+      # This may be backwards when I start calling render from the change even on the models...
 
-    render: =>
-      $("html").html(Invoice.toJSON())
-      this.setContent()
-      return this
+  #Bind Callbacks To Buttons
+  $('#add_part_button').click ->
+    invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':3})
+    invoiceItem.save()
+  #Create Objects
+  invoiceItems = new InvoiceItems
+  invoiceItems.reset(serverInvoiceItems)
 
-  invoices = new Invoices
-  invoices.reset(invoiceData)
+  invoiceItemView = new InvoiceItemView
 
-  invoice = new Invoice
+  testModel = invoiceItems.at(0)           # Use 'at' to get an element from a collection.
+  #alert testModel.get('description')      # Use 'get' to get an attribute from a model.
 
-  invoiceView = new InvoiceView({ model: invoice })
+  invoiceItemView.model = testModel        # really, we should be binding the render method in the view to the change event in the model.
 
-  ids = invoices.pluck("customer_id");
-
-  alert ids
+  invoiceItemView.render()                 # Render replaces everything in the table with new data.
