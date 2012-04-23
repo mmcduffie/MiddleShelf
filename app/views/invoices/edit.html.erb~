@@ -1,14 +1,16 @@
 <% content_for :page_script do %>
-  javascript_include_tag "invoices"
+  <%= javascript_include_tag "invoices" %>
 <% end %>
 <h1>Editing invoice</h1>
 <table id="invoice_items" border=1>
+<% @invoice.invoice_items.each do |invoice_item| %>
   <tr>
     <th>Item #</th>
   </tr>
   <tr>
-    <td>DATA!</td>
+    <td><%= invoice_item.item_id %></td>
   </tr>
+<% end %>
 </table>
 <a id="add_part_button" href="#">Add Part</a>
 <script type="text/javascript">

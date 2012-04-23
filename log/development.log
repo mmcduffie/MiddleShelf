@@ -20482,3 +20482,1557 @@ Served asset /application.js - 304 Not Modified (13ms)
 
 Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 09:28:31 -0400
 Served asset /invoices.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-22 22:24:34 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mInvoice Load (0.4ms)[0m  [1mSELECT "invoices".* FROM "invoices" [0m
+  Rendered invoices/index.html.erb within layouts/application (117.3ms)
+Completed 200 OK in 877ms (Views: 840.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /application.css - 200 OK (116ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /items.css - 200 OK (17ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /invoices.css - 200 OK (14ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /invoice_items.css - 200 OK (11ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /global.css - 200 OK (14ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /customers.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /jquery-ui.css - 200 OK (12ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /login-page.css - 200 OK (17ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /scaffolds.css - 200 OK (8ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /todays_invoices.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /jquery.js - 200 OK (38ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /jquery_ujs.js - 200 OK (34ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /jquery-ui.js - 200 OK (34ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /underscore.js - 200 OK (14ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /backbone.js - 200 OK (143ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /mustache.js - 200 OK (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:36 -0400
+Served asset /application.js - 200 OK (72ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:24:53 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.5ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (477ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (4.9ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (708.2ms)
+Completed 200 OK in 1108ms (Views: 769.6ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /global.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /invoices.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /jquery-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:54 -0400
+Served asset /invoices.js - 200 OK (7ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (8.1ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (21ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 108ms (Views: 83.0ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /application.css - 304 Not Modified (140ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /customers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /jquery-ui.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:46 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /underscore.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:25:47 -0400
+Served asset /invoices.js - 304 Not Modified (17ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:29:03 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (16ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 113ms (Views: 92.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /items.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /invoices.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /invoice_items.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /global.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /jquery-ui.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /todays_invoices.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /jquery-ui.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /mustache.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:29:04 -0400
+Served asset /invoices.js - 200 OK (12ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:36:32 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (16ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (3.1ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (121.6ms)
+Completed 200 OK in 179ms (Views: 165.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /application.css - 304 Not Modified (52ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /items.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /invoices.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /global.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /jquery-ui.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /login-page.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /underscore.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /backbone.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:33 -0400
+Served asset /invoices.js - 200 OK (16ms)
+
+
+Started POST "/invoice_items" for 127.0.0.1 at 2012-04-22 22:36:36 -0400
+Processing by InvoiceItemsController#create as JSON
+  Parameters: {"invoice_id"=>1, "description"=>2, "item_id"=>3, "invoice_item"=>{"invoice_id"=>1, "description"=>2, "item_id"=>3}}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (65.4ms)[0m  [1mINSERT INTO "invoice_items" ("created_at", "description", "invoice_id", "item_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 23 Apr 2012 02:36:36 UTC +00:00], ["description", 2], ["invoice_id", 1], ["item_id", 3], ["name", nil], ["updated_at", Mon, 23 Apr 2012 02:36:36 UTC +00:00]]
+  [1m[35m (147.2ms)[0m  commit transaction
+Completed 201 Created in 236ms (Views: 4.8ms | ActiveRecord: 212.7ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:39:03 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.3ms)[0m  [1mSELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1[0m
+  [1m[35mInvoiceItem Load (0.6ms)[0m  SELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1
+  Rendered invoices/edit.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 150ms (Views: 133.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /application.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /items.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /invoices.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /login-page.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /mustache.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:04 -0400
+Served asset /invoices.js - 304 Not Modified (0ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:39:18 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.2ms)[0m  [1mSELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mInvoiceItem Load (0.3ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1[0m
+Compiled invoices.js  (27ms)  (pid 2125)
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1
+  Rendered invoices/edit.html.erb within layouts/application (77.5ms)
+Completed 200 OK in 157ms (Views: 139.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /invoices.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /login-page.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /backbone.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:19 -0400
+Served asset /invoices.js - 200 OK (20ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:39:42 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.2ms)[0m  [1mSELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1[0m
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1
+  Rendered invoices/edit.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 90ms (Views: 77.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /application.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /items.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /global.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /customers.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /jquery-ui.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /login-page.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:43 -0400
+Served asset /invoices.js - 304 Not Modified (0ms)
+
+
+Started POST "/invoice_items" for 127.0.0.1 at 2012-04-22 22:39:50 -0400
+Processing by InvoiceItemsController#create as JSON
+  Parameters: {"invoice_id"=>1, "description"=>2, "item_id"=>3, "invoice_item"=>{"invoice_id"=>1, "description"=>2, "item_id"=>3}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.9ms)[0m  INSERT INTO "invoice_items" ("created_at", "description", "invoice_id", "item_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 23 Apr 2012 02:39:50 UTC +00:00], ["description", 2], ["invoice_id", 1], ["item_id", 3], ["name", nil], ["updated_at", Mon, 23 Apr 2012 02:39:50 UTC +00:00]]
+  [1m[36m (121.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 137ms (Views: 2.2ms | ActiveRecord: 130.3ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 83ms (Views: 70.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /customers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /jquery-ui.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /login-page.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (147ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:39:52 -0400
+Served asset /todays_invoices.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /underscore.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:39:53 -0400
+Served asset /invoices.js - 304 Not Modified (8ms)
+
+
+Started GET "/invoice_itemd" for 127.0.0.1 at 2012-04-22 22:40:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/invoice_itemd"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/marcus/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/marcus/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/marcus/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/marcus/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/invoice_items" for 127.0.0.1 at 2012-04-22 22:40:05 -0400
+Processing by InvoiceItemsController#index as HTML
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  Rendered invoice_items/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 79ms (Views: 72.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /items.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /global.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /invoice_items.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /jquery-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /todays_invoices.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /jquery-ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:06 -0400
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started DELETE "/invoice_items/5" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Processing by InvoiceItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0vuWdMEEG4Z1/5D+WGaF/JjvLII4MmydJ/jSMHFa32k=", "id"=>"5"}
+  [1m[36mInvoiceItem Load (0.5ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "invoice_items" WHERE "invoice_items"."id" = ?[0m  [["id", 5]]
+  [1m[35m (117.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/invoice_items
+Completed 302 Found in 135ms (ActiveRecord: 118.6ms)
+
+
+Started GET "/invoice_items" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Processing by InvoiceItemsController#index as HTML
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  Rendered invoice_items/index.html.erb within layouts/application (123.5ms)
+Completed 200 OK in 215ms (Views: 204.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Served asset /items.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:10 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /global.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:11 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started DELETE "/invoice_items/4" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Processing by InvoiceItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0vuWdMEEG4Z1/5D+WGaF/JjvLII4MmydJ/jSMHFa32k=", "id"=>"4"}
+  [1m[35mInvoiceItem Load (0.2ms)[0m  SELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "invoice_items" WHERE "invoice_items"."id" = ?  [["id", 4]]
+  [1m[36m (130.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/invoice_items
+Completed 302 Found in 149ms (ActiveRecord: 131.3ms)
+
+
+Started GET "/invoice_items" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Processing by InvoiceItemsController#index as HTML
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  Rendered invoice_items/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /items.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /global.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /login-page.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /jquery-ui.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:14 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:15 -0400
+Served asset /mustache.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:15 -0400
+Served asset /application.js - 304 Not Modified (150ms)
+
+
+Started GET "/invoices" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mInvoice Load (0.4ms)[0m  [1mSELECT "invoices".* FROM "invoices" [0m
+  Rendered invoices/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /jquery-ui.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /login-page.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /jquery-ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /underscore.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:19 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:40:21 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 116ms (Views: 97.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /items.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /invoice_items.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /global.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /customers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /jquery-ui.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /backbone.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /mustache.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /application.js - 304 Not Modified (166ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:40:22 -0400
+Served asset /invoices.js - 304 Not Modified (0ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.3ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (13ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 120ms (Views: 110.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /customers.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /items.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /invoice_items.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /global.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:17 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /jquery-ui.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /underscore.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:18 -0400
+Served asset /invoices.js - 200 OK (12ms)
+
+
+Started POST "/invoice_items" for 127.0.0.1 at 2012-04-22 22:41:20 -0400
+Processing by InvoiceItemsController#create as JSON
+  Parameters: {"invoice_id"=>1, "description"=>2, "item_id"=>3, "invoice_item"=>{"invoice_id"=>1, "description"=>2, "item_id"=>3}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "invoice_items" ("created_at", "description", "invoice_id", "item_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 23 Apr 2012 02:41:20 UTC +00:00], ["description", 2], ["invoice_id", 1], ["item_id", 3], ["name", nil], ["updated_at", Mon, 23 Apr 2012 02:41:20 UTC +00:00]]
+  [1m[35m (186.5ms)[0m  commit transaction
+Completed 201 Created in 202ms (Views: 1.9ms | ActiveRecord: 187.3ms)
+
+
+Started POST "/invoice_items" for 127.0.0.1 at 2012-04-22 22:41:21 -0400
+Processing by InvoiceItemsController#create as JSON
+  Parameters: {"invoice_id"=>1, "description"=>2, "item_id"=>3, "invoice_item"=>{"invoice_id"=>1, "description"=>2, "item_id"=>3}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO "invoice_items" ("created_at", "description", "invoice_id", "item_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 23 Apr 2012 02:41:21 UTC +00:00], ["description", 2], ["invoice_id", 1], ["item_id", 3], ["name", nil], ["updated_at", Mon, 23 Apr 2012 02:41:21 UTC +00:00]]
+  [1m[36m (114.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 129ms (Views: 1.7ms | ActiveRecord: 123.7ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:41:22 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+  [1m[36mInvoiceItem Load (7.3ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 92ms (Views: 70.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /invoices.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /global.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /jquery-ui.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /login-page.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /todays_invoices.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /mustache.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:41:23 -0400
+Served asset /invoices.js - 304 Not Modified (4ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInvoice Load (0.2ms)[0m  SELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" [0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1
+Compiled invoices.js  (17ms)  (pid 2125)
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1[0m
+  Rendered invoices/edit.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 132ms (Views: 112.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /items.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /invoice_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /global.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /login-page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /underscore.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /backbone.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:05 -0400
+Served asset /invoices.js - 200 OK (7ms)
+
+
+Started POST "/invoice_items" for 127.0.0.1 at 2012-04-22 22:42:08 -0400
+Processing by InvoiceItemsController#create as JSON
+  Parameters: {"invoice_id"=>1, "description"=>2, "item_id"=>3, "invoice_item"=>{"invoice_id"=>1, "description"=>2, "item_id"=>3}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "invoice_items" ("created_at", "description", "invoice_id", "item_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 23 Apr 2012 02:42:08 UTC +00:00], ["description", 2], ["invoice_id", 1], ["item_id", 3], ["name", nil], ["updated_at", Mon, 23 Apr 2012 02:42:08 UTC +00:00]]
+  [1m[35m (142.1ms)[0m  commit transaction
+Completed 201 Created in 158ms (Views: 2.2ms | ActiveRecord: 143.0ms)
+
+
+Started GET "/invoices/1/edit" for 127.0.0.1 at 2012-04-22 22:42:09 -0400
+Processing by InvoicesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.2ms)[0m  [1mSELECT "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mInvoiceItem Load (0.4ms)[0m  SELECT "invoice_items".* FROM "invoice_items" 
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = 1 LIMIT 1[0m
+  [1m[35mInvoiceItem Load (5.9ms)[0m  SELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = 1
+  Rendered invoices/edit.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 84ms (Views: 66.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:09 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /invoices.css - 304 Not Modified (144ms)
+
+
+Started GET "/assets/invoice_items.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /invoice_items.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /global.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /jquery-ui.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login-page.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /login-page.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/todays_invoices.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /todays_invoices.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /jquery-ui.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mustache.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /mustache.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/invoices.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:10 -0400
+Served asset /invoices.js - 304 Not Modified (0ms)
