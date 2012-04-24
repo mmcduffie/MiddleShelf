@@ -1,5 +1,4 @@
 $ ->
-  #Classes
   class InvoiceItem extends Backbone.Model
     url:      '/invoice_items'
 
@@ -11,35 +10,23 @@ $ ->
     el:       $('#invoice_items')
     tagName:  'td'
     initialize: ->
-      _.bindAll this, 'render'
       @collection = new InvoiceItems()
       @collection.reset(serverInvoiceItems)
-     
-      #alert @collection.at(0).get('description')
-      @model = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':3}) #kill me!
-
       @collection.bind('change:item_id', @render)
+      @render()
     events:
-      'click a#add_part_button': 'addItem'
-    render:     ->
+      'click button#add': 'addItem'
+    render:     =>
+      $(@el).empty()
       _(@collection.models).each (item) =>
         @appendItem(item)
-      $(@el).append(Mustache.render('<tr><td>{{ item_id }}</td></tr>',@model.toJSON()))
+      $(@el).append("<button id='add'>Add Item</button>")
     addItem:    ->
       invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':3})
       invoiceItem.save()
-      invoiceItemView = new InvoiceItemView({ model : invoiceItem })
-      invoiceItemView.render()
-
-  #Bind Callbacks To Buttons
-  #$('#add_part_button').click ->
-  #  invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':3})
-  #  invoiceItem.save()
-  #  invoiceItemView = new InvoiceItemView({ model : invoiceItem })
-  #  invoiceItemView.render()
-  #Create Objects
-  
-  #invoiceItems = new InvoiceItems
-  #invoiceItems.reset(serverInvoiceItems)
+      @collection.add(invoiceItem)
+      @render()
+    appendItem: (item) ->
+      $(@el).append(Mustache.render('<tr><td>{{ item_id }}</td></tr>',item.toJSON()))
 
   invoiceItemView = new InvoiceItemView()
