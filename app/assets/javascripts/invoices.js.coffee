@@ -12,7 +12,7 @@ $ ->
     initialize: ->
       @collection = new InvoiceItems()
       @collection.reset(serverInvoiceItems)
-      @collection.bind('change:item_id', @render)
+      @collection.bind('add', @appendItem)
       @render()
     events:
       'click button#add_item': 'addItem'
@@ -24,6 +24,11 @@ $ ->
           <tr>
             <td>
               <input type='text' id='item_id'></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type='text' id='item_description'></input>
             </td>
           </tr>
           <tr>
@@ -48,13 +53,13 @@ $ ->
         @addItemOk()    # Hackish, wrong, and hackishly wrong.
     addItemOk:  ->
       item_id = $('#item_id').val()
-      invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':2,'item_id':item_id})
+      item_description = $('#item_description').val()
+      invoiceItem = new InvoiceItem({'invoice_id':invoiceID,'description':item_description,'item_id':item_id})
       invoiceItem.save()
       @collection.add(invoiceItem)
-      @render()
       $('#add_item_dialog').dialog('destroy')
       $('#add_item_dialog').remove()
-    appendItem: (item) ->
-      $(@el).append(Mustache.render('<tr><td>{{ item_id }}</td></tr>',item.toJSON()))
+    appendItem: (item) =>
+      $(@el).append(Mustache.render('<tr><td>{{ item_id }}</td><td>{{ description }}</td></tr>',item.toJSON()))
 
   invoiceItemView = new InvoiceItemView()
