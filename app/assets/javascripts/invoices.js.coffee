@@ -1,6 +1,10 @@
 $ ->
   class InvoiceItem extends Backbone.Model
-    url:      '/invoice_items'
+    url: =>
+      if @id isnt undefined
+        "/invoice_items/#{@id}"
+      else
+        '/invoice_items'
 
   class InvoiceItems extends Backbone.Collection
     model:    InvoiceItem
@@ -64,8 +68,10 @@ $ ->
     appendItem: (item) =>
       $(@el).append(Mustache.render('<tr><td><input type="checkbox" id="{{ id }}" /></td><td>{{ item_id }}</td><td>{{ description }}</td></tr>',item.toJSON()))
     deleteItem: ->
-      $('#invoice_items input[type=checkbox]').each ->
-        if $('this').checked
-          alert "Hey!" 
+      _($('#invoice_items input[type=checkbox]')).each (checkbox)=>
+        if checkbox.checked
+          id = $(checkbox).attr('id')
+          @collection.get(id).destroy()
+          @render()
 
   invoiceItemView = new InvoiceItemView()
