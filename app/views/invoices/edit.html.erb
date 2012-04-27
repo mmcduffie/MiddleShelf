@@ -2,8 +2,10 @@
   <%= javascript_include_tag "invoices" %>
 <% end %>
 <h1>Editing invoice</h1>
-<table id="invoice_items" border=1>
-</table>
+<div id="invoice_items">
+  <table id="invoice_items_table" border=1>
+  </table>
+</div>
 <script type="text/javascript">
   var invoiceID          = <%= @invoice.id %>;
   var serverInvoiceItems = <%= @invoice.invoice_items.to_json.html_safe %>;
