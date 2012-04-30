@@ -2,6 +2,8 @@
 
 <table>
   <tr>
+    <th>UPC</th>
+    <th>Description</th>
     <th>Cost</th>
     <th>Selling Price</th>
     <th></th>
@@ -11,6 +13,8 @@
 
 <% @items.each do |item| %>
   <tr>
+    <td><%= item.UPC %></td>
+    <td><%= item.description %></td>
     <td><%= item.cost.format %></td>
     <td><%= item.selling_price.format %></td>
     <td><%= link_to 'Show', item %></td>

@@ -25,7 +25,6 @@ $ ->
 
     events:
       'click button#add_item': 'addItem'
-      'click button#add_item_ok': 'addItemOk'
       'click button#delete_item': 'deleteItem'
 
     addItemTemplate:
@@ -40,11 +39,6 @@ $ ->
           <tr>
             <td>
               <input type='text' id='item_description'></input>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button id='add_item_ok'>OK</button>
             </td>
           </tr>
         </table>
@@ -74,10 +68,17 @@ $ ->
 
     addItem:    ->
       $(@el).append(Mustache.render(@addItemTemplate))
-      $('#add_item_dialog').dialog({ modal: true })
-      $('#add_item_ok').button()
-      $('#add_item_ok').click =>
-        @addItemOk()
+      $('#add_item_dialog').dialog
+        modal: true
+        draggable: false
+        title: "Add Item"
+        buttons: [
+          {
+            text:  "OK"
+            click: =>
+              @addItemOk()
+          }
+        ]
 
     addItemOk:  ->
       item_id = $('#item_id').val()
