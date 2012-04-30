@@ -16,9 +16,9 @@ $ ->
     tagName:  'td'
     initialize: ->
       @collection = new InvoiceItems()
+      @collection.on('reset remove', @render)
+      @collection.on('add', @appendItem)
       @collection.reset(serverInvoiceItems)
-      @collection.bind('add', @appendItem)
-      @render()
       $(@el).append("<tr><td></td><td><button id='add_item'>Add Item</button></td><td><button id='delete_item'>Delete Item</button></td></tr>")
       $('#add_item').button({ icons: {primary:'ui-icon-plusthick'} })
       $('#delete_item').button({ icons: {primary:'ui-icon-minusthick'} })
@@ -97,6 +97,5 @@ $ ->
         if checkbox.checked
           id = $(checkbox).attr('id')
           @collection.get(id).destroy()
-          @render()
 
   invoiceItemView = new InvoiceItemView()
